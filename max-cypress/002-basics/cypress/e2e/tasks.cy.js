@@ -5,6 +5,10 @@ describe("tasks management", () => {
     cy.get(".backdrop").click({ force: true });
     cy.get(".backdrop").should("not.exist");
     cy.get("dialog.modal").should("not.exist");
-    // cy.get("Cancel").click();
+
+    cy.contains("Add Task").click();
+    cy.contains("Cancel").click();
+    cy.get(".backdrop").should("not.exist");
+    cy.get("dialog.modal").should("not.exist");
   });
 });
