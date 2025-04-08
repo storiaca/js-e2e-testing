@@ -13,3 +13,7 @@ https://github.com/academind/cypress-e2e-testing-course-resources
 ```bash
 npx cypress open
 ```
+
+## Assertions
+
+https://docs.cypress.io/app/references/assertions
