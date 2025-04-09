@@ -24,6 +24,10 @@ npm install -D @types/cypress
 
 https://docs.cypress.io/app/references/assertions
 
+## API Reference
+
+https://docs.cypress.io/api/table-of-contents
+
 ## and
 
 https://docs.cypress.io/api/commands/and
