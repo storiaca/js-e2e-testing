@@ -17,3 +17,7 @@ npx cypress open
 ## Assertions
 
 https://docs.cypress.io/app/references/assertions
+
+## and
+
+https://docs.cypress.io/api/commands/and
