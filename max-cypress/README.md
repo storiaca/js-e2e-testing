@@ -8,10 +8,16 @@ https://www.udemy.com/course/cypress-end-to-end-testing-getting-started
 
 https://github.com/academind/cypress-e2e-testing-course-resources
 
-## run cypress
+## Run cypress
 
 ```bash
 npx cypress open
+```
+
+## Instalacija tipova
+
+```bash
+npm install -D @types/cypress
 ```
 
 ## Assertions
