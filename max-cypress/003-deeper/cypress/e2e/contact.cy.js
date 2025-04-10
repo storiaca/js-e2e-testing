@@ -20,7 +20,7 @@ describe("contact form", () => {
     cy.get("@submitBtn").should("have.attr", "disabled");
   });
 
-  it("should valiate the form input", () => {
+  it("should validate the form input", () => {
     cy.visit("http://localhost:5173/about");
     cy.get('[data-cy="contact-btn-submit"]').click();
     cy.get('[data-cy="contact-btn-submit"]').then((el) => {
@@ -28,5 +28,24 @@ describe("contact form", () => {
       expect(el.text()).to.not.equal("Sending...");
     });
     cy.get('[data-cy="contact-btn-submit"]').contains("Send Message");
+    cy.get('[data-cy="contact-input-message"]').blur();
+    cy.get('[data-cy="contact-input-message"]')
+      .parent()
+      .then((el) => {
+        expect(el.attr("class")).to.contains("invalid");
+      });
+
+    cy.get('[data-cy="contact-input-name"]').focus().blur();
+    cy.get('[data-cy="contact-input-name"]')
+      .parent()
+      .then((el) => {
+        expect(el.attr("class")).to.contains("invalid");
+      });
+    cy.get('[data-cy="contact-input-email"]').focus().blur();
+    cy.get('[data-cy="contact-input-email"]')
+      .parent()
+      .then((el) => {
+        expect(el.attr("class")).to.contains("invalid");
+      });
   });
 });
