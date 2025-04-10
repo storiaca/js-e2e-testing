@@ -14,6 +14,10 @@ https://github.com/academind/cypress-e2e-testing-course-resources
 npx cypress open
 ```
 
+```bash
+npx cypress run
+```
+
 ## Instalacija tipova
 
 ```bash
