@@ -44,7 +44,9 @@ describe("contact form", () => {
     cy.get('[data-cy="contact-input-email"]').focus().blur();
     cy.get('[data-cy="contact-input-email"]')
       .parent()
-      .should("have.attr", "class")
-      .and("match", /invalid/);
+      .should((el) => {
+        expect(el.attr("class")).not.to.be.undefined;
+        expect(el.attr("class")).contains("invalid");
+      });
   });
 });
