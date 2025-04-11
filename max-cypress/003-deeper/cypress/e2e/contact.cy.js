@@ -9,11 +9,12 @@ describe("contact form", () => {
       expect(el.attr("disabled")).to.be.undefined;
       expect(el.text()).to.eq("Send Message");
     });
+    cy.screenshot();
     cy.get('[data-cy="contact-input-email"]').type("test@example.com{enter}");
     // cy.get('[data-cy="contact-btn-submit"]')
     //   .contains("Send Message")
     //   .and("not.have.attr", "disabled");
-
+    cy.screenshot();
     cy.get('[data-cy="contact-btn-submit"]').as("submitBtn");
     // cy.get("@submitBtn").click();
     cy.get("@submitBtn").contains("Sending...");
