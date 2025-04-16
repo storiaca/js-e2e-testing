@@ -1,8 +1,19 @@
 /// <reference types="Cypress" />
 
 describe("contact form", () => {
+  before(() => {
+    // Runs only once, before all tests
+  });
   beforeEach(() => {
+    // Runs before every test (i.e. it's repeated)
     cy.visit("/about");
+    // Seeding a database
+  });
+  afterEach(() => {
+    // Runs after every test
+  });
+  after(() => {
+    // Runs after all tests (i.e. only once)
   });
   it("should submit the form", () => {
     cy.get('[data-cy="contact-input-message"]').type("Hello world!");
