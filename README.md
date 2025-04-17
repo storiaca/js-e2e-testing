@@ -2,7 +2,7 @@
 
 ## Cypress
 
-https://www.cypress.io/
+<https://www.cypress.io/>
 
 ## Komanda
 
