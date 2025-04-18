@@ -9,5 +9,8 @@ describe("share location", () => {
     });
     cy.get('[data-cy="get-loc-btn"]').click();
     cy.get("@getUserPosition").should("have.been.called");
+    // button is disabled
+    cy.get('[data-cy="get-loc-btn"]').should("be.disabled");
+    cy.get('[data-cy="actions"]').should("contain", "Location fertched"); // alternative to contains()
   });
 });
