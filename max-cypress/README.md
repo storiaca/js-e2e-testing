@@ -15,6 +15,10 @@ npx cypress open
 ```
 
 ```bash
+npm run test:open
+```
+
+```bash
 npx cypress run
 ```
 
