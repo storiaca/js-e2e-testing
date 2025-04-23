@@ -1,6 +1,6 @@
-import { Link, useLoaderData } from '@remix-run/react';
-import Takeaways from '../components/Takeaways';
-import { prisma } from '../data/prisma.server';
+import { Link, useLoaderData } from "@remix-run/react";
+import Takeaways from "../components/Takeaways";
+import { prisma } from "../data/prisma.server";
 
 export default function Index() {
   const takeways = useLoaderData();
@@ -15,11 +15,16 @@ export default function Index() {
         </p>
       </section>
       <section className="text-center max-w-5xl mx-auto my-4">
-        <Takeaways items={takeways}/>
+        <Takeaways items={takeways} />
       </section>
       <section>
-        <p className='text-center'>
-          <Link to="/takeaways/new" className='bg-blue-700 text-blue-50 rounded-sm px-8 py-4 text-lg hover:bg-blue-600'>+ Add a new takeaway</Link>
+        <p className="text-center">
+          <Link
+            to="/takeaways/new"
+            className="bg-blue-700 text-blue-50 rounded-sm px-8 py-4 text-lg hover:bg-blue-600"
+          >
+            + Add a new takeaway
+          </Link>
         </p>
       </section>
     </>

@@ -14,6 +14,8 @@
 npx cypress open
 ```
 
+### Za 6 sekciju
+
 ```bash
 npm run test:open
 ```
