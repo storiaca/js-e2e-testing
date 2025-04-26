@@ -47,3 +47,7 @@ npx cypress run --browser firefox
 ## and
 
 <https://docs.cypress.io/api/commands/and>
+
+## Cypress realworld app
+
+<https://github.com/cypress-io/cypress-realworld-app>
